@@ -1,0 +1,124 @@
+<?php
+$pageTitle = 'Contact Us | Swiss Dental Bangalore | Book an Appointment';
+$pageDesc  = 'Contact Swiss Dental, Bangalore. Call +91 93807 98985 or visit us off Sarjapura Road, Kodathi Gate. Book your dental appointment today.';
+include 'partials/head.php';
+?>
+<body>
+
+<?php include 'partials/header.php'; ?>
+
+<main>
+
+  <section class="page-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <div class="container">
+      <span class="eyebrow" data-aos="up">Get In Touch</span>
+      <h1 data-aos="up" data-aos-delay="100">Let's Start Your <span class="text-grad">Smile Journey</span></h1>
+      <p class="crumb" data-aos="up" data-aos-delay="180"><a href="index.html">Home</a> / <span>Contact</span></p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="contact-hero-cards">
+      <div class="quick-card" data-aos="up" data-aos-delay="0">
+        <div class="ic"><svg class="icon"><use href="#ic-phone"/></svg></div>
+        <h4>Call Us</h4>
+        <a href="tel:+919380798985">+91 93807 98985</a>
+      </div>
+      <div class="quick-card" data-aos="up" data-aos-delay="100">
+        <div class="ic"><svg class="icon"><use href="#ic-whatsapp"/></svg></div>
+        <h4>WhatsApp</h4>
+        <a href="https://wa.me/919380798985?text=Hi%20Swiss%20Dental%2C%20I%27d%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener">Chat with us instantly</a>
+      </div>
+      <div class="quick-card" data-aos="up" data-aos-delay="200">
+        <div class="ic"><svg class="icon"><use href="#ic-pin"/></svg></div>
+        <h4>Visit Us</h4>
+        <p>Off Sarjapura Road, Kodathi Gate, Bangalore</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN: FORM + MAP/INFO -->
+  <section class="section-pad" style="padding-top:0;">
+    <div class="container contact-main">
+      <div data-aos="left">
+        <span class="eyebrow">Book An Appointment</span>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.3rem); font-weight:800; margin:18px 0 22px;">Request A Callback</h2>
+        <form class="lead-form" id="lead-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+91 00000 00000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="femail">Email (optional)</label>
+              <input type="email" id="femail" name="email" placeholder="you@email.com">
+            </div>
+            <div class="field">
+              <label for="fservice">Service Interested In</label>
+              <select id="fservice" name="service">
+                <option>Teeth Whitening</option>
+                <option>Smile Designing</option>
+                <option>Dental Implant</option>
+                <option>Laser Dentistry</option>
+                <option>Root Canal Treatment</option>
+                <option>Wisdom Tooth Removal</option>
+                <option>Dentures</option>
+                <option>Dental Fillings</option>
+                <option>Dental Braces</option>
+                <option>Dental Aligners / Invisalign</option>
+                <option>Digital X-Ray (RVG)</option>
+                <option>Cosmetic Dental Care</option>
+                <option>Flap Surgery</option>
+                <option>Child Dental Care</option>
+                <option>Full Mouth Rehabilitation</option>
+                <option>Geriatric Dental Care</option>
+                <option>General Consultation</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fmsg">Message (optional)</label>
+            <textarea id="fmsg" name="message" placeholder="Tell us a bit about your concern or preferred time to visit..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Request Appointment</button>
+          <p class="form-note">We usually respond within a few hours. For urgent care, please call <a href="tel:+919380798985" style="color:var(--yellow);">+91 93807 98985</a> directly.</p>
+        </form>
+        <div id="form-success">
+          <svg class="icon"><use href="#ic-check"/></svg>
+          <h3 style="margin-bottom:10px;">Request Received!</h3>
+          <p style="color:var(--gray);">Thank you — our team at Swiss Dental will get back to you shortly to confirm your appointment.</p>
+        </div>
+      </div>
+
+      <div data-aos="right">
+        <div class="map-frame" style="min-height:280px;">
+          <iframe src="https://www.google.com/maps?q=Opposite+Apollo+Diagnostics+Mullur+Road+Kodathi+Gate+Sarjapura+Road+Bangalore+560035&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Swiss Dental location map" style="min-height:280px;"></iframe>
+        </div>
+        <div class="info-card" style="margin-top:20px;">
+          <div class="ic"><svg class="icon"><use href="#ic-pin"/></svg></div>
+          <div><h4>Address</h4><p>#40/3, Shop No. 12, Opposite Apollo Diagnostics, Mullur Road, Kodathi Gate, Off Sarjapura Road, Bangalore – 560 035</p></div>
+        </div>
+        <div class="hours-card">
+          <h4 style="font-family:var(--font-display); font-size:.95rem; display:flex; align-items:center; gap:10px;"><svg class="icon" style="width:20px;height:20px;color:var(--yellow);"><use href="#ic-clock"/></svg> Clinic Hours</h4>
+          <ul>
+            <li><b>Monday – Saturday</b><span>9:00 AM – 8:00 PM</span></li>
+            <li class="today"><b>Sunday</b><span>By Appointment Only</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<?php include 'partials/footer.php'; ?>
